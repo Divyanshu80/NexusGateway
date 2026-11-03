@@ -1,0 +1,32 @@
+# Environments & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.local
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+backend.log
+frontend.log
+
+# Node & Frontend build
+node_modules/
+dist/
+build/
+.next/
+*.tsbuildinfo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
