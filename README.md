@@ -32,14 +32,6 @@ flowchart TD
 
 ---
 
-## Demo video
-
-[![NexusGateway Demo Video](https://img.shields.io/badge/Demo_Video-Watch_Walkthrough-cyan?style=for-the-badge&logo=youtube)](https://github.com/Divyanshu80/NexusGateway#demo-video)
-
-> *(Replace with your video link or Loom / YouTube recording URL)*
-
----
-
 ## Tech stack
 
 * **Backend:** Python 3.10+, FastAPI, Uvicorn, Pydantic v2, HTTPX
