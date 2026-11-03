@@ -18,3 +18,7 @@ __pycache__/
 venv/
 .pytest_cache/
 *.egg-info/
+*.log
+
+# Ignore old SentinelAI root backend folder
+backend/
