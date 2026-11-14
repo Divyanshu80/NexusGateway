@@ -36,8 +36,6 @@ flowchart TD
 
 [![NexusGateway Demo Video](https://img.shields.io/badge/Demo_Video-Watch_Walkthrough-cyan?style=for-the-badge&logo=youtube)](https://github.com/Divyanshu80/NexusGateway#demo-video)
 
-> *(Replace with your video link or Loom / YouTube recording URL)*
-
 ---
 
 ## Tech stack
