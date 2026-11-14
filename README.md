@@ -33,7 +33,7 @@ Clone the repository and run the launcher script:
 
 ```bash
 git clone https://github.com/Divyanshu80/NexusGateway.git
-cd NexusGateway
+cd NexusGateway/nexus_gateway
 
 # Make launcher executable and run
 chmod +x start_local.sh
@@ -46,7 +46,7 @@ If you prefer starting backend and frontend independently:
 
 #### 1. Backend (FastAPI Gateway)
 ```bash
-cd backend
+cd nexus_gateway/backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -55,7 +55,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 #### 2. Frontend (React 19 Dashboard)
 ```bash
-cd frontend
+cd nexus_gateway/frontend
 npm install
 npm run dev
 ```
