@@ -6,29 +6,7 @@ Production-grade LLM proxy and observability platform: unified OpenAI-compatible
 
 ## Project architecture
 
-```mermaid
-flowchart TD
-    Client["Client App / OpenAI SDK"] -->|"POST /v1/chat/completions"| GW["NexusGateway (FastAPI)"]
-    
-    subgraph Core Pipeline ["Security & Governance"]
-        GW --> Auth["API Key & Team Auth"]
-        Auth --> RL["Token Bucket Rate Limiter (RPM / TPM)"]
-        RL --> Budget["Monthly Budget Tracker (USD Cap)"]
-    end
-    
-    subgraph Routing Engine ["Resilience & Failover Engine"]
-        Budget --> Router["Multi-Tier Fallback Router"]
-        Router --> CB{"Circuit Breaker"}
-        CB -->|"Closed (Healthy)"| P1["Primary Model (e.g. mock-gpt-4o)"]
-        CB -->|"Open (Degraded / Down)"| P2["Fallback Model (e.g. gpt-4o / Claude / Ollama)"]
-    end
-    
-    subgraph Observability ["Unified Telemetry"]
-        GW --> Telemetry["Metrics & Request Logger"]
-        Telemetry --> Prom["Prometheus Metrics (/metrics)"]
-        Telemetry --> UI["React 19 Real-Time Dashboard"]
-    end
-```
+<img width="1752" height="897" alt="NexusGateway LLM Architecture Infographic" src="https://github.com/user-attachments/assets/7169291a-2e06-4c4f-8888-58a4dae3338c" />
 
 ---
 
